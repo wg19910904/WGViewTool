@@ -1,0 +1,41 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - Masonry (1.1.0)
+  - WGColorTool (1.0.0)
+  - WGView (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - Masonry
+  - WGColorTool (from `https://github.com/wg19910904/WGColorTool.git`)
+  - WGView (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+    - Masonry
+
+EXTERNAL SOURCES:
+  WGColorTool:
+    :git: https://github.com/wg19910904/WGColorTool.git
+  WGView:
+    :path: "../"
+
+CHECKOUT OPTIONS:
+  WGColorTool:
+    :commit: 0ca9b5ab00081f262e3c8a98466915ce35bb2736
+    :git: https://github.com/wg19910904/WGColorTool.git
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  WGColorTool: 8d2450f2fe330dceec0054b9789181cc0414811a
+  WGView: 1c80926e94bd9a3e59ffa29a038a4f8ffee99f3c
+
+PODFILE CHECKSUM: 2cf23c388749fdc554e7b7316f703aa9dc7e5d4e
+
+COCOAPODS: 1.9.1

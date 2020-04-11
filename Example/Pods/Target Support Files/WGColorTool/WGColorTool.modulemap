@@ -1,0 +1,6 @@
+framework module WGColorTool {
+  umbrella header "WGColorTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

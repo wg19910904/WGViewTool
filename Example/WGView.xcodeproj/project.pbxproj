@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		088E1359C7FBCB60B7BA8760 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		088E1359C7FBCB60B7BA8760 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		14C3A0B72A23CC7C8B3F2C39 /* Pods-WGView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGView_Tests.release.xcconfig"; path = "Target Support Files/Pods-WGView_Tests/Pods-WGView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		36BE906EF2E3250DE7C58BE0 /* Pods-WGView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGView_Example.debug.xcconfig"; path = "Target Support Files/Pods-WGView_Example/Pods-WGView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* WGView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,9 +64,9 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		978E3719C21B527C482F63B4 /* Pods_WGView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WGView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B1BE8B29AC6CDCEC60D5CD /* Pods_WGView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WGView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D698458B851E0629D16D1487 /* WGView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WGView.podspec; path = ../WGView.podspec; sourceTree = "<group>"; };
+		D698458B851E0629D16D1487 /* WGView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WGView.podspec; path = ../WGView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E6760B36BC4D38B9CE72A2AB /* Pods-WGView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGView_Example.release.xcconfig"; path = "Target Support Files/Pods-WGView_Example/Pods-WGView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E72F3D28253F8E7D7AD3F3B2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E72F3D28253F8E7D7AD3F3B2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				6C1C9A94412100F8F5A2E706 /* Pods-WGView_Tests.debug.xcconfig */,
 				14C3A0B72A23CC7C8B3F2C39 /* Pods-WGView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -325,10 +325,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WGView_Example/Pods-WGView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/WGColorTool/WGColorTool.framework",
 				"${BUILT_PRODUCTS_DIR}/WGView/WGView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WGColorTool.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WGView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

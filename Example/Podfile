@@ -4,7 +4,8 @@ platform :ios, '8.0'
 
 target 'WGView_Example' do
   pod 'WGView', :path => '../'
-
+  pod 'Masonry'
+  pod 'WGColorTool',:git =>"https://github.com/wg19910904/WGColorTool.git"
   target 'WGView_Tests' do
     inherit! :search_paths
 

@@ -1,0 +1,6 @@
+framework module WGView {
+  umbrella header "WGView-umbrella.h"
+
+  export *
+  module * { export * }
+}
